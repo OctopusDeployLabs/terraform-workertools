@@ -2,6 +2,9 @@ FROM octopuslabs/workertools:latest-ubuntu.2004
 
 ARG DEBIAN_FRONTEND noninteractive
 
+# Install git
+RUN apt-get update && apt-get install -y git 
+
 # Get Terraform
 # https://developer.hashicorp.com/terraform/downloads
 RUN wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | tee /usr/share/keyrings/hashicorp-archive-keyring.gpg && \

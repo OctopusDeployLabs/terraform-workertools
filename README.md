@@ -2,6 +2,7 @@
 
 This repository contains images that contain the tooling necessary to to use the execution container feature with Octopus Deploy when running commands against Terraform.
 
+- Git
 - Terraform
 
 The following images are built in this repo:
